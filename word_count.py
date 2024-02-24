@@ -113,7 +113,7 @@ import os.path
 
 def create_ouptput_directory(output_directory):
     if os.path.exists(output_directory):
-        raise FileExistsError(f"the directory '{output_directory}' already exixst.")
+        raise FileExistsError(f"the directory '{output_directory}' already exist.")
     os.makedirs(output_directory)
 
 
@@ -128,7 +128,7 @@ def create_ouptput_directory(output_directory):
 # separados por un tabulador.
 #
 def save_output(output_directory, sequence):
-    with open(output_directory + "\part-00000", "w") as file:
+    with open(output_directory + "/part-00000", "w") as file:
         for key, value in sequence:
             file.write(f"{key}\t{value}\n")
 sequence = load_input("input")
@@ -139,7 +139,7 @@ sequence = load_input("input")
 # entregado como parámetro.
 #
 def create_marker(output_directory):
-    with open(output_directory + "\_SUCCESS", "w") as file:
+    with open(output_directory + "/_SUCCESS", "w") as file:
         file.write("")
 
 
