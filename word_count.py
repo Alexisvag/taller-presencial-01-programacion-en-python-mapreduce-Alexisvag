@@ -139,7 +139,7 @@ sequence = load_input("input")
 # entregado como parámetro.
 #
 def create_marker(output_directory):
-    with open(output_directory + "\SUCCES", "w") as file:
+    with open(output_directory + "\SUCCESS", "w") as file:
         file.write("")
 
 
