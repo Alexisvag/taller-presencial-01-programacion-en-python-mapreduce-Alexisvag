@@ -56,8 +56,7 @@ def mapper(sequence):
             new_sequence.append((word,1))
     return new_sequence
 
-sequence = load_input("input")
-sequence = mapper(sequence)
+
 # print(sequence)
 
 
@@ -76,9 +75,6 @@ def shuffle_and_sort(sequence):
     sorted_sequence = sorted(sequence, key=lambda x: x[0])
     return sorted_sequence
 
-sequence = load_input("input")
-sequence = mapper(sequence)
-sequence = shuffle_and_sort(sequence)
 # print(sequence)
 
 
